@@ -1,6 +1,6 @@
 // src/api/ticketmaster.js
 
-const API_KEY = 'dlEIz6xRP4L1kmlspTa3PoluOFSQYrnl';
+const API_KEY = import.meta.env.VITE_IP_TRACKER_API;
 const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events.json';
 
 export async function fetchCharlotteEvents({ keyword = '', page = 0, size = 20, classificationName = '' } = {}) {
