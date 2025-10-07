@@ -1,99 +1,187 @@
 
-# 🎉 Local Events Finder – CLT Edition
+# 🎉 CLT Events - Local Events Finder (Charlotte Edition)
 
-A collaborative team project built by Per Scholas Charlotte students to help locals discover events happening in and around Queen City. From tech meetups to free concerts, find it all in one place.
+A modern, professional web application for discovering events in Charlotte, NC. Built with React, Vite, and Tailwind CSS.
 
----
+Originally started as a collaborative team project by Per Scholas Charlotte students, now enhanced with professional features and multiple event sources.
 
-## 📌 Table of Contents
+## 🌟 Features
 
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Contributors & Roles](#contributors--roles)
-- [Screenshots](#screenshots)
-- [Upcoming Improvements](#upcoming-improvements)
-- [License](#license)
+### 🎯 Multi-Source Event Discovery
+- **Ticketmaster Integration**: Professional concerts, sports, and major events
+- **Eventbrite Integration**: Community events, workshops, and local gatherings
+- **Local Charlotte Events**: Curated local events and community activities
 
----
+### 🎨 Professional Design
+- **Modern UI/UX**: Clean, responsive design with gradient backgrounds and smooth animations
+- **Event Icons**: Category-specific icons for easy event identification
+- **Event Images**: High-quality event images with fallback placeholders
+- **Source Badges**: Clear indication of event sources
+- **Professional Typography**: Optimized for readability and visual hierarchy
 
-## 📖 About the Project
+### 🔍 Advanced Search & Filtering
+- **Debounced Search**: Real-time search with 500ms debounce for optimal performance
+- **Category Filters**: Music, Sports, Arts, Comedy, Family, Food, Technology, Community
+- **Date Range Filters**: Today, Tomorrow, This Week, Weekend, Next Week, This Month
+- **Price Range Filters**: Free, Under $25, $25-$50, $50-$100, $100+
+- **Source Filters**: Filter by Ticketmaster, Eventbrite, or Local events
+- **Free Events Toggle**: Quick filter for free events only
 
-**Local Events Finder – CLT Edition** is designed to give users a simple way to explore local events in Charlotte. Whether you're looking for free events, networking opportunities, or fun things to do this weekend, this app makes it easy to search and filter.
+### 📊 Smart Sorting
+- **Date Sorting**: Earliest/Latest first
+- **Alphabetical Sorting**: A-Z or Z-A
+- **Price Sorting**: Low to High or High to Low
+- **Relevance Sorting**: Most relevant results first
 
-This project is part of our learning journey at [Per Scholas Charlotte](https://perscholas.org/locations/charlotte/) and a chance to practice team collaboration using GitHub, APIs, and modern web technologies.
+### 📱 Performance & UX
+- **Pagination**: 12 events per page with smooth navigation
+- **Responsive Design**: Optimized for mobile, tablet, and desktop
+- **Loading States**: Professional loading animations
+- **Error Handling**: Graceful error messages and fallbacks
+- **Event Statistics**: Real-time stats showing event sources and counts
 
----
+## 🚀 Getting Started
 
-## 🚀 Features
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-- Browse local Charlotte events
-- Filter by category (e.g. Tech, Free, Music)
-- Search events by keyword
-- View event details (location, date, time)
-- Mobile-friendly design
+### Installation
 
----
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/CodeCLT-Crew/Local-Events-Finder-CLT-Edition-.git
+   cd Local-Events-Finder-CLT-Edition-
+   ```
 
-## 🛠️ Tech Stack
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-**Frontend:**
-- React
-- Tailwind CSS or CSS Modules
-- React Router
+3. **Set up environment variables**
+   ```bash
+   # Copy the example environment file
+   cp .env.example .env
 
-**Backend (Optional):**
-- Node.js + Express
+   # Edit .env and add your API keys
+   # VITE_TICKETMASTER_API_KEY=your_ticketmaster_key
+   # VITE_EVENTBRITE_API_KEY=your_eventbrite_token
+   ```
 
-**API:**
-- Ticketmaster API / Eventbrite API
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-**Other Tools:**
-- GitHub Projects / Issues
-- Netlify (for deployment)
+5. **Open your browser**
+   Navigate to `http://localhost:5173` (or the port shown in terminal)
 
----
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 🛠️ Technology Stack
+
+- **Frontend Framework**: React 19.1.0
+- **Build Tool**: Vite 7.0.0
+- **Styling**: Tailwind CSS 4.1.12
+- **Routing**: React Router DOM 7.6.2
+- **HTTP Client**: Axios 1.11.0
+- **Icons**: Lucide React
+- **Development**: ESLint, TypeScript support
 
 ## 🧑‍💻 Contributors & Roles
 
 | Name | GitHub | Role |
 |------|--------|------|
-| Person 1 | [@GitHubHandle](https://github.com/MeronTeweldebrhan) | Team Lead + Backend/API Integration |
-| Person 2 | [@GitHubHandle](https://github.com/jcwynde) | Event List + UI Components |
-| Person 3 | [@GitHubHandle](https://github.com/username) | Search & Filters |
-| Person 4 | [@GitHubHandle](https://github.com/username) | Responsive Styling & UX |
-| Person 5 | [@GitHubHandle](https://github.com/username) | Save Feature + Testing |
+| Meron Teweldebrhan | [@MeronTeweldebrhan](https://github.com/MeronTeweldebrhan) | Team Lead + Backend/API Integration |
+| Person 2 | [@jcwynde](https://github.com/jcwynde) | Event List + UI Components |
+| Person 3 | [@username](https://github.com/username) | Search & Filters |
+| Person 4 | [@username](https://github.com/username) | Responsive Styling & UX |
+| Person 5 | [@username](https://github.com/username) | Save Feature + Testing |
 
 > Want to join? Fork, clone, and open a PR! 🎯
 
----
+## 📁 Project Structure
 
-## 🧪 Getting Started
+```
+src/
+├── Components/           # Reusable UI components
+├── api/                 # API integration modules
+├── hooks/               # Custom React hooks
+├── pages/               # Page components
+├── utils/               # Utility functions
+├── App.jsx              # Main application component
+├── index.css            # Global styles and custom CSS
+└── main.jsx             # Application entry point
+```
 
-`
-### Clone the repo
-git clone https://github.com/CodeCLT-Crew/Local-Events-Finder-CLT-Edition-.git
-cd Local-Events-Finder-CLT-Edition-
+## 🎪 Event Categories
 
-### Install dependencies
-npm install
+- 🎵 **Music & Concerts**: Live music, concerts, festivals
+- 🏆 **Sports**: Professional and amateur sports events
+- 🎭 **Arts & Theater**: Theater, dance, opera, cultural events
+- 😂 **Comedy**: Stand-up comedy, comedy shows
+- 👨‍👩‍👧‍👦 **Family & Kids**: Family-friendly events and activities
+- 🍕 **Food & Drink**: Food festivals, tastings, culinary events
+- 💻 **Technology**: Tech meetups, conferences, workshops
+- 🤝 **Community**: Local community events and gatherings
 
-### Run the app
-npm start
+## 🔧 Configuration
 
-### REACT_APP_EVENTS_API_KEY=your_api_key_here
-📷 Screenshots
-Coming soon!
+### API Keys Setup
 
-### 🚧 Upcoming Improvements
-* Add Google Maps integration
-* Build login & save favorites with MongoDB
-* Add user-submitted events
-* Unit testing with Jest/React Testing Library
+1. **Copy the environment template**
+   ```bash
+   cp .env.example .env
+   ```
 
-### License
+2. **Get your API keys:**
+   - **Ticketmaster API**: Visit [Ticketmaster Developer Portal](https://developer.ticketmaster.com/)
+   - **Eventbrite API**: Visit [Eventbrite API Keys](https://www.eventbrite.com/platform/api-keys/)
+
+3. **Add your keys to `.env`:**
+   ```env
+   VITE_TICKETMASTER_API_KEY=your_ticketmaster_api_key_here
+   VITE_EVENTBRITE_API_KEY=your_eventbrite_api_token_here
+   ```
+
+4. **Restart the development server** after adding environment variables
+
+### Important Notes:
+- The `.env` file is automatically ignored by Git for security
+- Never commit API keys to version control
+- **Real API Integration**: The app now fetches actual events from Eventbrite and Ticketmaster APIs
+- If API keys are missing or invalid, the app will show error messages in the console
+- Check the browser console (F12) for API status and debugging information
+
+## 🚧 Recent Improvements
+
+✅ **Completed Enhancements:**
+- Multi-source event integration (Ticketmaster, Eventbrite, Local)
+- Professional UI/UX with modern design
+- Advanced filtering and sorting capabilities
+- Debounced search for better performance
+- Pagination for large result sets
+- Event icons and visual enhancements
+- Responsive design improvements
+- Loading states and error handling
+
+## 🔮 Future Improvements
+
+- Google Maps integration for event locations
+- User authentication and saved favorites
+- User-submitted events
+- Calendar integration
+- Social sharing features
+- Push notifications for saved events
+- Advanced analytics and recommendations
+
+## 📄 License
+
 MIT License © 2025 CodeCLT-Crew
-Built with ❤️ by Per Scholas Charlotte Students
 
->>>>>>> 3ca3a97e7debf8027a4667f66b613c995cddc8ef
+Built with ❤️ by Per Scholas Charlotte Students and enhanced for the Charlotte community!
